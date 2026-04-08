@@ -1,33 +1,72 @@
 # 🌍 Volta ao Mundo — Itália
 
-Uma experiência web interativa desenvolvida para explorar a Itália por meio de cultura, história, curiosidades e elementos visuais modernos.
+<p align="center">
+  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow">
+  <img src="https://img.shields.io/badge/version-1.0-purple">
+</p>
 
-## 📖 Sobre o Projeto
+> Uma experiência web interativa desenvolvida para explorar a cultura, história e curiosidades da Itália de forma moderna, acessível e visualmente envolvente.
 
-O **Volta ao Mundo — Itália** é uma aplicação web focada em apresentar informações relevantes sobre a Itália de forma organizada, acessível e visualmente atrativa. A proposta do projeto é proporcionar uma “viagem digital”, permitindo que o usuário conheça aspectos marcantes do país sem sair do navegador.
+---
 
-A aplicação reúne conteúdos sobre:
-- Cultura italiana e tradições
-- Pontos turísticos icônicos
-- Curiosidades (com abordagem leve e criativa)
-- Contextos históricos e sociais
+## 🚀 Acesse o Projeto
 
-O projeto prioriza uma navegação fluida, com layout responsivo e estrutura escalável, facilitando futuras expansões para outros países.
+<p align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/🔗%20Ver%20Projeto%20Online-000?style=for-the-badge">
+  </a>
+</p>
+
+---
+
+## 📌 Sobre o Projeto
+
+O **Volta ao Mundo — Itália** é uma aplicação web que tem como objetivo apresentar a Itália por meio de uma experiência digital organizada e intuitiva.
+
+A proposta do projeto é transformar informações culturais e históricas em uma navegação fluida, permitindo que o usuário explore o país de forma natural, como em uma pequena viagem virtual.
+
+A estrutura do conteúdo foi planejada para equilibrar **informação, estética e leveza**, reunindo desde aspectos culturais e turísticos até curiosidades apresentadas de forma criativa.
+
+---
 
 ## 🚀 Funcionalidades
 
-- Interface responsiva e adaptável a diferentes dispositivos  
-- Seções organizadas por tema  
-- Conteúdo informativo com abordagem visual  
-- Página dedicada à Itália com identidade própria  
-- Estrutura preparada para múltiplos países  
+- 📱 Interface totalmente responsiva  
+- 🧭 Navegação simples e intuitiva  
+- 🎭 Conteúdo cultural e histórico organizado  
+- 📍 Destaque para pontos turísticos relevantes  
+- 💡 Curiosidades com abordagem leve e dinâmica  
+- 🌐 Estrutura preparada para expansão (novos países)  
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5**
-- **CSS3**
-- **JavaScipt**
-- **Bootstrap**
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="22"> <strong>HTML5</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="22"> <strong>CSS3</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="22"> <strong>JavaScript</strong><br>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" width="22"> <strong>Bootstrap</strong>
+</p>
 
-## 📂 Estrutura do Projeto
-# Volta-Ao-Mundo-BootStrap
+---
+
+## 🎯 Objetivo
+
+Este projeto foi desenvolvido com foco acadêmico, visando:
+
+- Aplicar conceitos de desenvolvimento web  
+- Praticar organização e estruturação de projetos  
+- Criar uma interface moderna, funcional e responsiva  
+- Desenvolver uma base escalável para futuras expansões  
+- Garantir compatibilidade entre **Desktop** e **Mobile**  
+
+---
+
+## 🖼️ Preview do Projeto
+
+<p align="center">
+  <em>🚧 Preview do site será adicionado em breve</em>
+</p>
+
+---
