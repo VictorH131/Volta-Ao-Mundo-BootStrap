@@ -1,0 +1,219 @@
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding-top: 56px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ================= NAVBAR ================= */
+    .navbar {
+      background-color: #dc3545 !important;
+    }
+
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #fff !important;
+    }
+
+    .btn-login {
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    .btn-login:hover {
+      background: #fff;
+      color: #dc3545;
+    }
+    #titunav {
+      padding-left: 32px !important;
+    }
+
+    /* ================= NAV INFERIOR ================= */
+    .nav-scroller {
+      background: #ffffff;
+      border-bottom: 3px solid #198754;
+      margin-top: 10px;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 5px 0;
+    }
+
+    .nav-underline .nav-link {
+        padding: .6rem 1rem;
+        font-size: .9rem;
+        color: #198754;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    .nav-underline .nav-link:hover {
+        background-color: #dc3545;
+        color: white;
+        transform: translateY(-2px);
+        border-color: #981a27 !important;  
+    }
+
+    .nav-underline .active {
+      background-color: #198754; 
+      color: white !important;  
+      border-color: #095632 !important;             
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+      
+    /* ================= HERO ================= */
+    .hero {
+      background: url('../img/fundo_home.png') no-repeat center center/cover;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-box {
+      margin-left: auto;
+      max-width: 500px;
+      padding: 2rem;
+      border-left: 6px solid #198754;
+      border-radius: 12px;
+      color: white;
+
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      border: 1px solid rgba(255,255,255,0.2);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-box h1 {
+      font-family: 'Playfair Display', serif;
+      color: #ffffff;
+    }
+
+    .btn-main {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+    }
+
+    .btn-main:hover {
+      background-color: #bb2d3b;
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 991.98px) {
+        .offcanvas-collapse {
+            position: fixed;
+            top: 56px;
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            padding: 2rem 1.5rem;
+            background-color: #dc3545;
+            visibility: hidden;
+            transition: .3s;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;          
+            justify-content: center;     
+        }
+
+        .offcanvas-collapse.open {
+            visibility: visible;
+            transform: translateX(-100%);
+        }
+
+        /* Links */
+        .navbar-nav {
+            align-items: center;
+            gap: 18px;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .offcanvas-collapse .d-flex {
+            margin-top: 25px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn-login {
+            width: 200px;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .nav-scroller {
+            display: none;
+        }
+    }
+
+    /* ================= DESKTOP ================= */
+    @media (min-width: 992px) {
+      .offcanvas-collapse {
+        display: none !important;
+      }
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      margin-top: auto;
+      background-color: #198754;
+      color: white;
+      text-align: center;
+    }
+    
+    /* ================= Popup login ================= */
+    .modal-content {
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
+      background: hwb(0 100% 0%);
+      border: none;
+    }
+    .btn-main {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+    }
+
+    .btn-main:hover {
+      background-color: #bb2d3b !important;
+      color: white !important;
+    }
+
+    .btn-main:active {
+      background-color: #a52834 !important;
+    }
+
+    .btn-main:focus {
+      box-shadow: none;
+    }
+
+    #backpopouplogin{
+      background-color: #198754;
+    }
