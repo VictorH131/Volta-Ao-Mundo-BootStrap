@@ -12,7 +12,7 @@
 ## 🚀 Acesse o Projeto
 
 <p align="center">
-  <a href="shttps://victorh131.github.io/Volta-Ao-Mundo-BootStrap/">
+  <a href="https://victorh131.github.io/Volta-Ao-Mundo-BootStrap/">
     <img src="https://img.shields.io/badge/🔗%20Ver%20Projeto%20Online-000?style=for-the-badge">
   </a>
 </p>
