@@ -5,115 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Volta ao Mundo - Itália</title>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/italia.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-dark">
   <div class="container-fluid">
-
     <a class="navbar-brand" id="titunav" href="index.html">ITᗩᒪIᗩ</a>
 
-    <!-- LOGIN -->
     <div class="d-none d-lg-flex align-items-center gap-2">
       <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
         Login
       </button>
     </div>
 
-    <!-- BOTÃO MOBILE -->
     <button class="navbar-toggler d-lg-none" type="button" id="navbarSideCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
- 
-    <!-- MENU MOBILE -->
+
     <div class="offcanvas-collapse" id="navbarsExampleDefault">
-  
-      <!-- Links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="historia.html">História</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="cultura.html">Cultura</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="turismo.html">Turismo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="curiosidades.html">Curiosidades</a>
-        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="cultura.html">Cultura</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="turismo.html">Turismo</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="curiosidades.html">Curiosidades</a></li>
       </ul>
 
-      <!-- Botão -->
       <div class="d-flex align-items-center mt-3 mt-lg-0">
         <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
           Login
         </button>
       </div>
-
     </div>
-
   </div>
 </nav>
 
-<!-- NAV INFERIOR -->
 <div class="nav-scroller shadow-sm">
   <nav class="nav nav-underline py-2">
     <a class="nav-link active" href="index.html">Início</a>
-    <a class="nav-link" href="historia.html">História</a>
     <a class="nav-link" href="cultura.html">Cultura</a>
     <a class="nav-link" href="turismo.html">Turismo</a>
     <a class="nav-link" href="curiosidades.html">Curiosidades</a>
   </nav>
 </div>
 
-<!-- HERO -->
+<main>
+
+<div class="parallax-bg"></div>
+
 <section class="hero">
-  <div class="container d-flex">
-
-    <div class="hero-box">
-      <h1>Descubra a Itália</h1>
-      <p>
-        Explore um dos países mais icônicos do mundo, com paisagens deslumbrantes,
-        história milenar e uma cultura única.
-      </p>
-      <a href="#" class="btn btn-main">Explorar agora</a>
-    </div>
-
+  <div class="container">
+    <h1 class="display-3 fw-bold">Itália</h1>
+    <p class="lead">Explore o coração da Europa e descubra um país repleto de cultura, história e beleza incomparável.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="py-3">
+<section>
   <div class="container">
+    <div class="card custom-card p-4 text-center">
+      <h2>História Rica</h2>
+      <p class="col-lg-8 mx-auto">
+        A Itália possui uma das histórias mais influentes do mundo, sendo o berço do Império Romano e palco do Renascimento. 
+        Suas cidades guardam monumentos, arte e tradições que atravessaram séculos e moldaram a civilização ocidental. 
+        Cada região revela um capítulo único dessa trajetória fascinante.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="card custom-card p-4">
+      <div class="row align-items-center g-4">
+
+        <div class="col-md-6">
+          <img src="img/coliseu1.png" class="img-fluid shadow" alt="Coliseu">
+        </div>
+
+        <div class="col-md-6">
+          <h2>Monumentos Icônicos</h2>
+          <p>
+            A Itália abriga alguns dos monumentos mais famosos do planeta, como o Coliseu, a Torre de Pisa e o Vaticano. 
+            Essas construções impressionam pela grandiosidade, história e riqueza cultural que representam. 
+            Visitá-las é mergulhar diretamente no passado e vivenciar a essência da humanidade.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="card custom-card p-4 text-center">
+      <h2>Culinária</h2>
+      <p class="col-lg-8 mx-auto">
+        A culinária italiana é reconhecida mundialmente por sua simplicidade e sabor marcante. 
+        Pratos como massas, pizzas e risotos conquistam pessoas em todos os continentes. 
+        Cada receita carrega tradição, ingredientes frescos e uma forte identidade cultural.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="card custom-card p-4 text-center">
+      <h2>Paisagens</h2>
+      <p class="col-lg-8 mx-auto">
+        A diversidade natural da Itália é impressionante, com paisagens que vão de montanhas nevadas a praias paradisíacas. 
+        Regiões como Toscana e Costa Amalfitana oferecem cenários dignos de filmes. 
+        É um destino que encanta tanto pela natureza quanto pela harmonia com a arquitetura histórica.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="py-3">
+  <div class="container text-center">
     <span>© 2026 Victor H. | Projeto Volta ao Mundo - Itália</span>
   </div>
 </footer>
 
-<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/parallax.js"></script>
 
-
-<!-- MODAL LOGIN -->
 <div class="modal fade" id="loginModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
 
-      <div class="modal-header justify-content-center" id="backpopouplogin" >
+      <div class="modal-header justify-content-center" id="backpopouplogin">
         <h5 class="modal-title text-white fst-italic">Entrar</h5>
         <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3" data-bs-dismiss="modal"></button>
       </div>
