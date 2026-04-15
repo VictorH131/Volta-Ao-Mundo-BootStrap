@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Volta ao Mundo - Itália</title>
+  <title>Turismo - Itália</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/italia.css">
+  
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-dark">
+<nav class="navbar navbar-dark ">
   <div class="container-fluid">
 
     <a class="navbar-brand" id="titunav" href="index.html">ITᗩᒪIᗩ</a>
@@ -72,29 +74,81 @@
 <!-- NAV INFERIOR -->
 <div class="nav-scroller shadow-sm">
   <nav class="nav nav-underline py-2">
-    <a class="nav-link active" href="index.html">Início</a>
+    <a class="nav-link" href="index.html">Início</a>
     <a class="nav-link" href="historia.html">História</a>
     <a class="nav-link" href="cultura.html">Cultura</a>
-    <a class="nav-link" href="turismo.html">Turismo</a>
+    <a class="nav-link active " href="turismo.html">Turismo</a>
     <a class="nav-link" href="curiosidades.html">Curiosidades</a>
   </nav>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container d-flex">
+<!-- main -->
+  <main class="bg-light">
+    <div class="container py-4">
+        <div class="row">
 
-    <div class="hero-box">
-      <h1>Descubra a Itália</h1>
-      <p>
-        Explore um dos países mais icônicos do mundo, com paisagens deslumbrantes,
-        história milenar e uma cultura única.
-      </p>
-      <a href="#" class="btn btn-main">Explorar agora</a>
+         
+            <div class="col-lg-3 mb-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">Filtrar</h5>
+                        <hr>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-search"></i></span>
+                            <input type="text" id="search" class="form-control" placeholder="Buscar destino...">
+                        </div>
+
+                        <h6 class="fw-bold">Atividades</h6>
+
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="Tour"
+                                onchange="filtrar()"> Tour</div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="Passeio de barco"
+                                onchange="filtrar()"> Passeio de barco</div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="Cultural"
+                                onchange="filtrar()"> Cultural</div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" value="Trilha"
+                                onchange="filtrar()"> Trilha</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Visita guiada" onchange="filtrar()">
+                            Visita guiada
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Ponto turístico"
+                                onchange="filtrar()"> Ponto turístico
+                        </div>
+
+                        <h6 class="mt-3">Min horas: <span id="valorHoras">0h</span></h6>
+                        <input type="range" class="form-range" min="0" max="6" id="rangeHoras"
+                            oninput="atualizarHoras()">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARDS -->
+            <div class="col-lg-9">
+                <div class="row g-4" id="cards"></div>
+            </div>
+
+        </div>
     </div>
 
+<div class="text-center my-4">
+  <button id="btnFakeLoad" class="btn btn-outline-success px-4">
+    Carregar mais
+  </button>
+
+  <div id="loadingFake" class="mt-3" style="display:none;">
+    <div class="spinner-border text-success" role="status"></div>
+    <p class="mt-2 text-muted">Carregando destinos...</p>
   </div>
-</section>
+
+</div>
+
+  </main>
 
 <!-- FOOTER -->
 <footer class="py-3">
@@ -106,6 +160,8 @@
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/nav.js"></script>
+<!-- JS Com Incluso Bootstrap -->
+<script src="js/turismo.js"></script>
 
 
 <!-- MODAL LOGIN -->
