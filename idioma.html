@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audio - Itália</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/italia.png" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/italia.css">
+
+    <style>
+        .main-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px;
+            margin: 60px auto;
+            max-width: 1200px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .linha {
+            height: 4px;
+            width: 70px;
+            background: #CD212A;
+            margin: 20px auto;
+        }
+
+        .card-custom {
+            border-radius: 15px;
+            padding: 25px;
+            background: white;
+            transition: 0.3s;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .curiosidade {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 5px solid #CD212A;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .curiosidade:hover {
+            background: #fff;
+            transform: translateX(5px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: 0.8s;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="titunav" href="index.html">ITᗩᒪIᗩ</a>
+
+            <div class="d-none d-lg-flex align-items-center gap-2">
+                <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            </div>
+
+            <button class="navbar-toggler d-lg-none" type="button" id="navbarSideCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cultura.html">Cultura</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="turismo.html">Turismo</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="curiosidades.html">Curiosidades</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-scroller shadow-sm">
+        <nav class="nav nav-underline py-2">
+            <a class="nav-link" href="index.html">Início</a>
+            <a class="nav-link" href="cultura.html">Cultura</a>
+            <a class="nav-link" href="turismo.html">Turismo</a>
+            <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+        </nav>
+    </div>
+
+   <main class="pagina-idioma">
+        <div class="parallax-bg"></div>
+
+        <div class="main-card">
+
+            <!-- HERO -->
+            <section class="text-center reveal">
+                <h1 class="display-4 fw-bold">Idioma Italiano</h1>
+                <div class="linha"></div>
+                <p class="lead col-md-8 mx-auto">
+                    Um idioma elegante, musical e carregado de história, arte e cultura.
+                </p>
+            </section>
+
+            <!-- TEMAS -->
+            <section class="row text-center mt-5 reveal">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom">
+                        <h3>📜 História</h3>
+                        <p>Originado do latim vulgar e consolidado na Toscana.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom">
+                        <h3>🌍 Importância</h3>
+                        <p>Idioma essencial para música, arte e gastronomia.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom">
+                        <h3>🧠 Aprendizado</h3>
+                        <p>Considerado fácil para brasileiros aprenderem.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- PRONÚNCIA -->
+            <section class="mt-5 reveal">
+                <h2 class="text-center">🔊 Pronúncia</h2>
+                <div class="linha"></div>
+
+                <p class="text-center col-md-8 mx-auto">
+                    O italiano possui pronúncia clara e consistente, onde cada letra
+                    geralmente tem um som fixo.
+                </p>
+            </section>
+
+            <!-- PALAVRAS -->
+            <section class="reveal mb-5">
+                <h2 class="text-center">🗣️ Palavras Essenciais</h2>
+                <div class="linha mx-auto"></div>
+
+                <div class="row text-center mt-4">
+
+                    <div class="col-md-3 mb-4">
+                        <div class="card-custom">
+                            <h4>Ciao</h4>
+                            <p>Olá / Tchau</p>
+                            <audio controls class="w-100">
+                                <source src="audio/ciao.mp3">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="card-custom">
+                            <h4>Grazie</h4>
+                            <p>Obrigado</p>
+                            <audio controls class="w-100">
+                                <source src="audio/grazie.mp3">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="card-custom">
+                            <h4>Prego</h4>
+                            <p>De nada</p>
+                            <audio controls class="w-100">
+                                <source src="audio/prego.mp3">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <div class="card-custom">
+                            <h4>Scusa</h4>
+                            <p>Desculpa</p>
+                            <audio controls class="w-100">
+                                <source src="audio/scusa.mp3">
+                            </audio>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- VÍDEO -->
+            <section class="row align-items-center mt-5 reveal">
+
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="951" height="535" src="https://www.youtube.com/embed/A1dkZrpZgjY?list=RDA1dkZrpZgjY" title="Esteriore Brothers - Bella Ciao (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>🎶 Musicalidade</h3>
+                    <p>
+                        A língua italiana é considerada uma das mais bonitas do mundo,
+                        muito utilizada em óperas e músicas clássicas.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- CURIOSIDADES -->
+            <section class="mt-5 reveal">
+
+                <h2 class="text-center">💡 Curiosidades sobre o Italiano</h2>
+                <div class="linha"></div>
+
+                <div class="row mt-4">
+
+                    <div class="col-md-6">
+                        <div class="curiosidade">🎵 O italiano é a língua oficial da ópera</div>
+                        <div class="curiosidade">🎭 Muitas palavras artísticas vêm do italiano</div>
+                        <div class="curiosidade">🗣️ Italianos usam muitos gestos ao falar</div>
+                        <div class="curiosidade">📖 Baseado no dialeto toscano</div>
+                        <div class="curiosidade">🎶 Considerado o idioma mais musical</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="curiosidade">🌍 Mais de 60 milhões de falantes</div>
+                        <div class="curiosidade">🍝 Forte ligação com a gastronomia</div>
+                        <div class="curiosidade">🧠 Fácil para brasileiros aprenderem</div>
+                        <div class="curiosidade">🎬 Presente em filmes e cultura pop</div>
+                        <div class="curiosidade">🏛️ Influenciou outras línguas</div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- EXTRA -->
+            <section class="mt-5 reveal">
+                <h2 class="text-center">🔥 Por que aprender italiano?</h2>
+                <div class="linha"></div>
+
+                <div class="row text-center mt-4">
+
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <h4>🎓 Estudos</h4>
+                            <p>Facilita intercâmbio e acesso a universidades europeias.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <h4>✈️ Viagens</h4>
+                            <p>Experiência muito mais rica ao visitar a Itália.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <h4>💼 Carreira</h4>
+                            <p>Diferencial competitivo no mercado de trabalho.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="py-3">
+        <div class="container text-center">
+            <span>© 2026 Victor H. | Projeto Volta ao Mundo - Itália</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/idioma.js"></script>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header justify-content-center" id="backpopouplogin">
+                    <h5 class="modal-title text-white fst-italic">Entrar</h5>
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3"
+                        data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Digite seu email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control" placeholder="Digite sua senha">
+                        </div>
+
+                        <button type="submit" class="btn btn-main w-100">Entrar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
