@@ -9,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* ================= NAVBAR ================= */
+/* ================= NAVBAR Geral ================= */
 .navbar {
   background-color: #dc3545 !important;
 }
@@ -38,8 +38,8 @@ body {
 .nav-scroller {
   background: #ffffff;
   border-bottom: 3px solid #198754;
-  margin: 0;        /* 🔥 tira espaço */
-  padding: 0;       /* 🔥 tira espaço interno */
+  margin: 0;        
+  padding: 0;       
 }
 .nav-scroller .nav {
   display: flex;
@@ -71,134 +71,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-/* ================= MAIN ================= */
-
-.card-img-top {
-  height: 230px;
-  object-fit: cover;
-}
-
-.btn-circle {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay-btn {
-  position: absolute;
-  top: 10px;
-  z-index: 2;
-}
-
-.overlay-left {
-  left: 10px;
-}
-
-.overlay-right {
-  right: 10px;
-}
-
-.descricao {
-  display: none;
-}
-
-.comentarios {
-  display: none;
-}
-
-.rating {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.rating input {
-  display: none;
-}
-
-.rating label {
-  font-size: 1.3rem;
-  color: #ccc;
-  cursor: pointer;
-  margin-left: 4px;
-}
-
-.rating input:checked~label,
-.rating label:hover,
-.rating label:hover~label {
-  color: #ffc107;
-}
-
-/* botoes do main*/
-.btn-primary {
-  background-color: #dc3545;
-  border-color: #dc3545;
-}
-
-.btn-primary:hover {
-  background-color: #bb2d3b;
-  border-color: #bb2d3b;
-}
-
-
-.btn-outline-primary {
-  color: #198754;
-  border-color: #198754;
-}
-
-.btn-outline-primary:hover {
-  background-color: #198754;
-  color: white;
-}
-
-
-a {
-  color: #198754;
-}
-
-a:hover {
-  color: #dc3545;
-}
-
-
-.form-control:focus {
-  border-color: #198754;
-  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
-}
-
-
-.form-check-input:checked {
-  background-color: #198754;
-  border-color: #198754;
-}
-
-.form-range::-webkit-slider-thumb {
-  background-color: #dc3545;
-}
-
-.form-range::-moz-range-thumb {
-  background-color: #dc3545;
-}
-
-
-.spinner-border {
-  color: #198754 !important;
-}
-
-
-.text-primary {
-  color: #198754 !important;
-}
-
-
-.bg-primary {
-  background-color: #dc3545 !important;
-}
-
-/* ================= MOBILE ================= */
+/* ================= MOBILE navbar ================= */
 @media (max-width: 991.98px) {
 
   .offcanvas-collapse {
@@ -260,7 +133,7 @@ a:hover {
 
 }
 
-/* ================= DESKTOP ================= */
+/* ================= DESKTOP navbar colapce ================= */
 @media (min-width: 992px) {
   .offcanvas-collapse {
     display: none !important;
@@ -366,3 +239,320 @@ section {
 .custom-card img {
   border-radius: 10px;
 }
+
+
+
+/* ================= TURISMO PAGE ================= */
+
+.pagina-turismo .card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
+.pagina-turismo .btn-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagina-turismo .overlay-btn {
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+}
+
+.pagina-turismo .overlay-left {
+  left: 10px;
+}
+
+.pagina-turismo .overlay-right {
+  right: 10px;
+}
+
+.pagina-turismo .descricao {
+  display: none;
+}
+
+.pagina-turismo .comentarios {
+  display: none;
+}
+
+/* RATING */
+.pagina-turismo .rating {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.pagina-turismo .rating input {
+  display: none;
+}
+
+.pagina-turismo .rating label {
+  font-size: 1.3rem;
+  color: #ccc;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.pagina-turismo .rating input:checked ~ label,
+.pagina-turismo .rating label:hover,
+.pagina-turismo .rating label:hover ~ label {
+  color: #ffc107;
+}
+
+/* BOTÕES */
+.pagina-turismo .btn-primary {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.pagina-turismo .btn-primary:hover {
+  background-color: #bb2d3b;
+  border-color: #bb2d3b;
+}
+
+.pagina-turismo .btn-outline-primary {
+  color: #198754;
+  border-color: #198754;
+}
+
+.pagina-turismo .btn-outline-primary:hover {
+  background-color: #198754;
+  color: white;
+}
+
+
+/* FORM */
+.pagina-turismo .form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.pagina-turismo .form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.pagina-turismo .form-range::-webkit-slider-thumb {
+  background-color: #dc3545;
+}
+
+.pagina-turismo .form-range::-moz-range-thumb {
+  background-color: #dc3545;
+}
+
+/* SPINNER */
+.pagina-turismo .spinner-border {
+  color: #198754 !important;
+}
+
+/* UTILITÁRIOS BOOTSTRAP SOBRESCRITOS */
+.pagina-turismo .text-primary {
+  color: #198754 !important;
+}
+
+.pagina-turismo .bg-primary {
+  background-color: #dc3545 !important;
+}
+
+/* ===================== DETALHES PAGE ===================== */
+
+.pagina-detalhes {
+    background: #f8f9fa;
+}
+
+/* CAROUSEL */
+.pagina-detalhes .carousel img {
+    height: 320px;
+    object-fit: cover;
+}
+
+/* CARD */
+.pagina-detalhes .card {
+    transition: 0.3s;
+}
+
+.pagina-detalhes .card:hover {
+    transform: translateY(-5px);
+}
+
+.pagina-detalhes #listaComentarios {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.pagina-detalhes #listaComentarios .bg-light {
+    border-left: 4px solid #009246;
+}
+
+.pagina-detalhes .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.pagina-detalhes .rating input {
+    display: none;
+}
+
+.pagina-detalhes .rating label {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.pagina-detalhes .rating input:checked ~ label {
+    color: #ce2b37;
+}
+
+.pagina-detalhes .rating label:hover,
+.pagina-detalhes .rating label:hover ~ label {
+    color: #009246;
+}
+
+.pagina-detalhes .btn-primary {
+    background-color: #009246;
+    border-color: #009246;
+}
+
+.pagina-detalhes .btn-primary:hover {
+    background-color: #007a3a;
+    border-color: #007a3a;
+}
+
+.pagina-detalhes .btn-danger {
+    background-color: #ce2b37;
+    border-color: #ce2b37;
+}
+
+.pagina-detalhes .badge.bg-success {
+    background-color: #009246 !important;
+}
+
+.pagina-detalhes .badge.bg-danger {
+    background-color: #ce2b37 !important;
+}
+
+.pagina-detalhes #rating {
+    color: #ce2b37;
+}
+
+.pagina-detalhes svg[fill="green"] {
+    fill: #009246 !important;
+}
+
+.pagina-detalhes svg[fill="red"] {
+    fill: #ce2b37 !important;
+}
+
+
+
+
+/* ===================== CULTURA PAGE ===================== */
+
+/* DESKTOP */
+.pagina-cultura .row-interactive {
+    display: flex;
+    gap: 12px;
+}
+
+.pagina-cultura .card-interactive {
+    position: relative;
+    flex: 1;
+    height: 420px;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.pagina-cultura .card-interactive img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pagina-cultura .card-interactive span {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+}
+
+.pagina-cultura .card-interactive::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+}
+
+.pagina-cultura .row-interactive:hover .card-interactive {
+    filter: blur(3px) brightness(0.5);
+    transform: scale(0.95);
+}
+
+.pagina-cultura .card-interactive:hover {
+    flex: 2.5;
+    filter: blur(0px) brightness(1.15) !important;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* MOBILE */
+.pagina-cultura .mobile-carousel {
+    display: none;
+}
+
+.pagina-cultura .mobile-carousel img {
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.pagina-cultura .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 4px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.pagina-cultura .carousel-indicators .active {
+    opacity: 1;
+}
+
+.pagina-cultura .carousel-text {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    z-index: 10;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .pagina-cultura .row-interactive {
+        display: none;
+    }
+
+    .pagina-cultura .mobile-carousel {
+        display: block;
+    }
+}
+
+/* ===================== IDioma PAGE ===================== */
+
+
+
+

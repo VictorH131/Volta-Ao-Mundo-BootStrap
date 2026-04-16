@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cultura - Itália</title>
 
+  <link rel="shortcut icon" href="img/italia.png" type="image/x-icon">
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -15,111 +17,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/italia.css">
 
-  <style>
-body {
-    background: #0b0b12;
-}
-
-/* ===================== DESKTOP ===================== */
-
-.row-interactive {
-    display: flex;
-    gap: 12px;
-}
-
-.card-interactive {
-    position: relative;
-    flex: 1;
-    height: 420px;
-    border-radius: 18px;
-    overflow: hidden;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    transform: scale(1);
-}
-
-.card-interactive img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-interactive span {
-    position: absolute;
-    bottom: 18px;
-    left: 18px;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    z-index: 2;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
-}
-
-.card-interactive::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
-}
-
-.row-interactive:hover .card-interactive {
-    filter: blur(3px) brightness(0.5);
-    transform: scale(0.95);
-}
-
-.card-interactive:hover {
-    flex: 2.5;
-    filter: blur(0px) brightness(1.15) !important;
-    transform: scale(1.05);
-    z-index: 10;
-}
-
-/* ===================== MOBILE  ===================== */
-
-.mobile-carousel {
-    display: none;
-}
-
-.mobile-carousel img {
-    height: 70vh;
-    object-fit: cover;
-    border-radius: 18px;
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 4px;
-    background-color: white;
-    opacity: 0.5;
-}
-
-.carousel-indicators .active {
-    opacity: 1;
-}
-
-@media (max-width: 768px) {
-    .row-interactive {
-        display: none;
-    }
-
-    .mobile-carousel {
-        display: block;
-    }
-}
-
-.carousel-text {
-    position: absolute;
-    bottom: 55px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
-    z-index: 10;
-    text-align: center;
-}
-</style>
 </head>
 
 <body>
@@ -184,34 +81,34 @@ body {
 </div>
 
 <!-- main -->
-  <main class="bg-light">
+ <main class="bg-light pagina-cultura">
     
     <div class="container py-5">
 
         <div class="row-interactive">
 
-            <a href="#idioma" class="card-interactive">
-                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac">
+            <a href="idioma.html" class="card-interactive">
+                <img src="img/idioma.png">
                 <span>Idioma</span>
             </a>
 
-            <a href="#gastronomia" class="card-interactive">
+            <a href="gastronomia.html" class="card-interactive">
                 <img src="img/culinaria.png">
                 <span>Gastronomia</span>
             </a>
 
-            <a href="#historia" class="card-interactive">
-                <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1">
+            <a href="historia.html" class="card-interactive">
+                <img src="img/historia.png">
                 <span>História</span>
             </a>
 
-            <a href="#artes" class="card-interactive">
-                <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb">
+            <a href="artes.html" class="card-interactive">
+                <img src="img/arte.png">
                 <span>Artes</span>
             </a>
 
-            <a href="#tradicoes" class="card-interactive">
-                <img src="https://images.unsplash.com/photo-1520975922203-bb9d4a6c2a8b">
+            <a href="tradicoes.html" class="card-interactive">
+                <img src="img/tradicao.png">
                 <span>Tradições</span>
             </a>
 
@@ -232,36 +129,36 @@ body {
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <a href="#idioma" class="d-block position-relative">
-                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac" class="d-block w-100">
+                    <a href="idioma.html" class="d-block position-relative">
+                        <img src="img/idioma.png" class="d-block w-100">
                         <div class="carousel-text">Idioma</div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="#gastronomia" class="d-block position-relative">
-                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" class="d-block w-100">
+                    <a href="gastronomia.html" class="d-block position-relative">
+                        <img src="img/culinaria.png" class="d-block w-100">
                         <div class="carousel-text">Gastronomia</div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="#historia" class="d-block position-relative">
-                        <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1" class="d-block w-100">
+                    <a href="historia.html" class="d-block position-relative">
+                        <img src="img/historia.png" class="d-block w-100">
                         <div class="carousel-text">História</div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="#artes" class="d-block position-relative">
-                        <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb" class="d-block w-100">
+                    <a href="artes.html" class="d-block position-relative">
+                        <img src="img/arte.png" class="d-block w-100">
                         <div class="carousel-text">Artes</div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="#tradicoes" class="d-block position-relative">
-                        <img src="https://images.unsplash.com/photo-1520975922203-bb9d4a6c2a8b" class="d-block w-100">
+                    <a href="tradicoes.html" class="d-block position-relative">
+                        <img src="img/tradicao.png" class="d-block w-100">
                         <div class="carousel-text">Tradições</div>
                     </a>
                 </div>
@@ -291,9 +188,6 @@ body {
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/nav.js"></script>
-
-<!-- JS Com Incluso Bootstrap -->
-
 
 
 <!-- MODAL LOGIN -->
