@@ -1093,3 +1093,144 @@ section {
 }
 
 /* ===== PÁGINA Curiozidades  ===== */
+.curi {
+    text-align: center;
+    padding: 70px 20px 30px;
+}
+
+.curi h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+ .curi p {
+    opacity: 0.8;
+    font-size: 1.05rem;
+}
+
+/* CARD PRINCIPAL */
+.pagina-curiosidades .quiz-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    margin-top: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+    margin-bottom: 15%;
+}
+
+.pagina-curiosidades .quiz-card:hover {
+    transform: translateY(-4px);
+}
+
+
+.pagina-curiosidades #start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 260px;
+}
+
+.pagina-curiosidades .option {
+    background: #f7f7f7;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.pagina-curiosidades .option:hover {
+    background: #ededed;
+    transform: translateY(-2px);
+    border-color: #ddd;
+}
+
+.pagina-curiosidades .correct {
+    background: #198754 !important;
+    color: #fff !important;
+    border-color: #198754 !important;
+    animation: flashGreen 0.6s ease;
+}
+
+/* ERRADO */
+.pagina-curiosidades .wrong {
+    background: #dc3545 !important;
+    color: #fff !important;
+    border-color: #dc3545 !important;
+}
+
+
+@keyframes flashGreen {
+    0% {
+        box-shadow: 0 0 0px #198754;
+    }
+    50% {
+        box-shadow: 0 0 25px #00ff88;
+        transform: scale(1.02);
+    }
+    100% {
+        box-shadow: 0 0 0px transparent;
+    }
+}
+
+/* TIMER */
+.pagina-curiosidades .timer {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+
+.pagina-curiosidades .rank-card {
+    max-width: 420px;
+    margin: 0 auto 20px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.pagina-curiosidades .rank-card:hover {
+    transform: translateY(-3px);
+}
+
+.pagina-curiosidades .rank-card h5 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pagina-curiosidades .rank-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pagina-curiosidades .btn-success {
+    transition: 0.3s;
+}
+
+.pagina-curiosidades .btn-success:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .pagina-curiosidades .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .pagina-curiosidades .quiz-card {
+        padding: 18px;
+    }
+}
