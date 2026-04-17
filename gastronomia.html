@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Culinaria - Itália</title>
+
+    <link rel="shortcut icon" href="img/italia.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/italia.css">
+
+    <style>
+        .linha {
+            width: 70px;
+            height: 4px;
+            background: #dc3545;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        /* SEARCH */
+        .search-box {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .search-box i {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #888;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 10px 10px 38px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            outline: none;
+            transition: .3s;
+        }
+
+        .search-box input:focus {
+            border-color: #dc3545;
+            box-shadow: 0 0 8px rgba(220, 53, 69, 0.2);
+        }
+
+        /* BOTÕES FILTRO */
+        .filtro-btn.active {
+            background: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+
+        /* GRID */
+        .receitas-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        /* CARD */
+        .receita-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .receita-card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .receita-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .receita-content {
+            padding: 15px;
+        }
+
+        .receita-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nota {
+            background: #198754;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .receita-content small {
+            color: #dc3545;
+            font-weight: 500;
+        }
+
+        .receita-content p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* RESPONSIVO */
+        @media(max-width:768px) {
+            .receitas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="titunav" href="index.html">ITᗩᒪIᗩ</a>
+
+            <div class="d-none d-lg-flex align-items-center gap-2">
+                <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            </div>
+
+            <button class="navbar-toggler d-lg-none" type="button" id="navbarSideCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cultura.html">Cultura</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="turismo.html">Turismo</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="curiosidades.html">Curiosidades</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-scroller shadow-sm">
+        <nav class="nav nav-underline py-2">
+            <a class="nav-link" href="index.html">Início</a>
+            <a class="nav-link" href="cultura.html">Cultura</a>
+            <a class="nav-link" href="turismo.html">Turismo</a>
+            <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+        </nav>
+    </div>
+
+    <main class="pagina-culinaria container py-5">
+        <!-- INTRO -->
+        <section class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Gastronomia Italiana</h1>
+            <div class="linha"></div>
+
+            <p class="lead">
+                A culinária italiana é uma das mais ricas do mundo, cheia de tradição e sabor.
+            </p>
+
+            <p>
+                Cada prato representa uma região, uma história e uma cultura única.
+            </p>
+        </section>
+
+        <!-- BLOCOS -->
+        <section class="mb-4">
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-danger">🍅 Ingredientes</h5>
+                    <p>Frescos, naturais e base de toda culinária italiana.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-danger">📍 Regiões</h5>
+                    <p>Cada região possui pratos únicos e tradicionais.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-danger">👨‍🍳 Tradição</h5>
+                    <p>Receitas passadas por gerações na Itália.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <i class="bi bi-search"></i>
+            <input id="search" type="text" placeholder="Buscar receita...">
+        </div>
+
+        <!-- FILTROS -->
+        <div class="d-flex gap-2 flex-wrap mb-4">
+            <button class="btn btn-outline-danger filtro-btn active" onclick="setFiltro(this,'')">Todos</button>
+            <button class="btn btn-outline-danger filtro-btn" onclick="setFiltro(this,'Massa')">Massa</button>
+            <button class="btn btn-outline-danger filtro-btn"
+                onclick="setFiltro(this,'Tradicional')">Tradicional</button>
+            <button class="btn btn-outline-danger filtro-btn" onclick="setFiltro(this,'Sobremesa')">Sobremesa</button>
+            <button class="btn btn-outline-danger filtro-btn" onclick="setFiltro(this,'Entrada')">Entrada</button>
+        </div>
+
+
+        <div id="cards" class="receitas-grid"></div>
+
+        <div id="loadMoreWrapper" class="text-center my-4">
+
+            <button id="loadMore" class="btn btn-danger px-4">
+                Carregar mais
+            </button>
+
+            <!-- LOADER BOOTSTRAP -->
+            <div id="loader" class="d-none mt-3">
+
+                <div class="spinner-border text-danger" role="status"></div>
+
+                <div class="mt-2 text-muted">
+                    Carregando mais receitas...
+                </div>
+
+                <div class="progress mt-3 mx-auto" style="max-width: 200px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-100"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="py-3">
+        <div class="container text-center">
+            <span>© 2026 Victor H. | Projeto Volta ao Mundo - Itália</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/gastronomia.js"></script>
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header justify-content-center" id="backpopouplogin">
+                    <h5 class="modal-title text-white fst-italic">Entrar</h5>
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3"
+                        data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Digite seu email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control" placeholder="Digite sua senha">
+                        </div>
+
+                        <button type="submit" class="btn btn-main w-100">Entrar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

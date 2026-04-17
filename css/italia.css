@@ -638,3 +638,247 @@ section {
 
 /* ===================== IDioma PAGE ===================== */
 
+
+.pagina-idioma .main-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 60px;
+    margin: 60px auto;
+    max-width: 1200px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.pagina-idioma .linha {
+    height: 4px;
+    width: 70px;
+    background: #CD212A;
+    margin: 20px auto;
+}
+
+.pagina-idioma .card-custom {
+    border-radius: 15px;
+    padding: 25px;
+    background: white;
+    transition: 0.3s;
+    height: 100%;
+    border: 1px solid #eee;
+}
+
+.pagina-idioma .card-custom:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pagina-idioma .curiosidade {
+    background: #f8f9fa;
+    padding: 20px;
+    border-left: 5px solid #CD212A;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.pagina-idioma .curiosidade:hover {
+    background: #fff;
+    transform: translateX(5px);
+}
+
+.pagina-idioma .reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.8s;
+}
+
+.pagina-idioma .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* ===================== PÁGINA Culinarria ===================== */
+
+.pagina-culinaria .linha {
+    width: 70px;
+    height: 4px;
+    background: #dc3545;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* Pesquisa */
+.pagina-culinaria .search-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.pagina-culinaria .search-box i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.pagina-culinaria .search-box input {
+    width: 100%;
+    padding: 10px 10px 10px 38px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: .3s;
+}
+
+.pagina-culinaria .search-box input:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 8px rgba(220, 53, 69, 0.2);
+}
+
+/* FILTROS */
+.pagina-culinaria .filtro-btn.active {
+    background: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.pagina-culinaria .receitas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.pagina-culinaria .receita-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pagina-culinaria .receita-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.pagina-culinaria .receita-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.pagina-culinaria .receita-content {
+    padding: 15px;
+}
+
+.pagina-culinaria .receita-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagina-culinaria .nota {
+    background: #198754;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pagina-culinaria .receita-content small {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.pagina-culinaria .receita-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+@media(max-width:768px) {
+    .pagina-culinaria .receitas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===== PÁGINA RECEITA  ===== */
+
+.pagina-receita .box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.pagina-receita .box:hover {
+    transform: translateY(-6px);
+}
+
+/* TÍTULO */
+.pagina-receita #titulo {
+    font-size: 2.2rem;
+}
+
+/* CARROSSEL */
+.pagina-receita .carousel img {
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* BADGES */
+.pagina-receita .badge {
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* LISTAS */
+.pagina-receita .list-group-item {
+    border: none;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+/* DESCRIÇÃO */
+.pagina-receita #descricao {
+    font-size: 1.05rem;
+}
+
+/* RATING */
+.pagina-receita #rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ce2b37;
+}
+
+/* INGREDIENTES */
+.pagina-receita #ingredientes li {
+    border-left: 4px solid #009246;
+    font-size: 0.95rem;
+}
+
+/* MODO DE PREPARO */
+.pagina-receita #modoPreparo li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* BOTÃO */
+.pagina-receita .btn-outline-primary {
+    color: #198754;
+    border-color: #198754;
+}
+
+.pagina-receita .btn-outline-primary:hover {
+    background-color: #198754;
+    color: white;
+}
+
+/* ===== PÁGINA historia  ===== */
+
+
