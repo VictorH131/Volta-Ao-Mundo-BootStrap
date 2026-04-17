@@ -881,6 +881,172 @@ section {
 
 /* ===== PÁGINA historia  ===== */
 
+/* HERO */
+.hist {
+    text-align: center;
+    padding: 100px 20px 60px;
+    background: radial-gradient(circle at top, #111, #0b0b0f);
+}
+
+.hist h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+ .hist p {
+    max-width: 850px;
+    margin: 15px auto;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* TIMELINE */
+.pagina-historia .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 10px;
+}
+
+/* LINHA CENTRAL */
+.pagina-historia .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #CD212A;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+}
+
+/* ITEM */
+.pagina-historia .item {
+    width: 50%;
+    padding: 90px 40px;
+    position: relative;
+
+    opacity: 0;
+    transform: translateY(90px);
+    transition: 1.4s ease;
+}
+
+.pagina-historia .item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pagina-historia .left {
+    left: 0;
+}
+
+.pagina-historia .right {
+    left: 50%;
+}
+
+/* CARD */
+.pagina-historia .card {
+    background: #1a1a22;
+    border-radius: 14px;
+    padding: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-left: 4px solid #008C45;
+}
+
+.pagina-historia .card:hover {
+    transform: scale(1.03);
+}
+
+/* TEXTO BRANCO */
+.pagina-historia .card h4,
+.pagina-historia .card p,
+.pagina-historia .card .details,
+.pagina-historia .card span {
+    color: #fff !important;
+}
+
+/* DETAILS */
+.pagina-historia .details {
+    display: none;
+    margin-top: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.pagina-historia .card.active .details {
+    display: block;
+}
+
+/* BADGE */
+.pagina-historia .badge-italy {
+    background: #008C45;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.pagina-historia .footer-bar {
+    height: 120px;
+    background: linear-gradient(90deg, #008C45 33%, #fff 33% 66%, #CD212A 66%);
+    margin-top: 40px; /* ↓ reduzido */
+}
+@media (max-width: 768px) {
+
+    .hist {
+        padding: 80px 15px 40px;
+    }
+
+    .hist h1 {
+        font-size: 2.2rem;
+    }
+
+    .hist p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .pagina-historia .timeline::after {
+        left: 8px;
+    }
+
+    .pagina-historia .item {
+        width: 100%;
+        padding: 40px 20px 40px 40px;
+        transform: translateY(60px);
+    }
+
+    .pagina-historia .left,
+    .pagina-historia .right {
+        left: 0 !important;
+    }
+
+    .pagina-historia .card {
+        font-size: 0.95rem;
+    }
+
+    .pagina-historia .card:hover {
+        transform: none;
+    }
+
+    .pagina-historia .badge-italy {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .pagina-historia .footer-bar {
+        height: 80px;
+        margin-top: 25px;
+    }
+}
 
 /* ===== PÁGINA Artes  ===== */
 
@@ -925,3 +1091,5 @@ section {
     background: white;
     padding: 10px;
 }
+
+/* ===== PÁGINA Curiozidades  ===== */
