@@ -17,6 +17,10 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2a89b9e0-0b97-4863-969a-06ed9bfeff3f"  width="250"/>
+</p>
+
 ---
 
 ## 📌 Sobre o Projeto
@@ -63,10 +67,3 @@ Este projeto foi desenvolvido com foco acadêmico, visando:
 
 ---
 
-## 🖼️ Preview do Projeto
-
-<p align="center">
-  <em>🚧 Preview do site será adicionado em breve</em>
-</p>
-
----
