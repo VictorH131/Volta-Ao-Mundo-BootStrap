@@ -1,7 +1,7 @@
 # 🌍 Volta ao Mundo — Itália
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow">
+  <img src="https://img.shields.io/badge/status-finalizado-darkgreen">
   <img src="https://img.shields.io/badge/version-1.0-purple">
 </p>
 
